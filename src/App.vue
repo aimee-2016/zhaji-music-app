@@ -1,19 +1,23 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
-    <!-- <router-view/> -->
-    hellow aimee
+    <m-header></m-header>
+    <tab></tab>
+    <router-view/>
   </div>
 </template>
 
 <script>
+import MHeader from './components/m-header/m-header'
+import tab from './components/tab/tab'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    tab,
+    MHeader
+  }
 }
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
-@import 'common/stylus/variable.styl'
-#app
-  color: $color-theme
+
 </style>
